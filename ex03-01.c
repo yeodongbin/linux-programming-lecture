@@ -1,9 +1,11 @@
-/* program ex03-01.c */
 #include <sys/types.h>
 #include <fcntl.h>
 #include <unistd.h>
+#include <stdio.h>
+#include <string.h>
 
-main()
+
+int main()
 {
     int filedes, fdnew1, fdnew2;
     ssize_t nread;
@@ -15,7 +17,7 @@ main()
     filedes = open("data.txt", O_RDWR);
 
     nread = read(filedes, buffer, 1024);
-    printf("%s", buffer);
+    printf("%s\n", buffer);
 
     write(filedes, content, strlen(content));
 

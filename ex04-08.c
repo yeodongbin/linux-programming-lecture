@@ -1,7 +1,8 @@
 
 #include <unistd.h>
+#include <stdio.h>
 
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
         if(symlink(argv[1], argv[2]))
                 printf("soft-link failed\n");

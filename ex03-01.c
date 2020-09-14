@@ -4,6 +4,12 @@
 #include <stdio.h>
 #include <string.h>
 
+//data.txt =>
+//$cat data.txt
+//Hello my world!!
+//
+//읽기 쓰기 권한 # chmod 777 data.txt
+
 
 int main()
 {

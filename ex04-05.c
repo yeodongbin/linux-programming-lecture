@@ -1,6 +1,8 @@
 
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 int main()
 {
@@ -10,7 +12,8 @@ int main()
 
     if(chmod("test1.txt", mode1) == -1)
         exit(1);
-    if(chmode(test2.txt", mode2) == -1)
+
+    if(chmod("test2.txt", mode2) == -1)
         exit(1);
 
     printf("rest of program ... \n");

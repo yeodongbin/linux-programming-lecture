@@ -1,4 +1,4 @@
-
+#include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
 #include <sys/types.h>
@@ -6,7 +6,7 @@
 
 int main(int argc, char *argv[])
 {
-    struct stat finfo
+    struct stat finfo;
     char fname[1024];
 
     if(argc > 1)
@@ -19,17 +19,17 @@ int main(int argc, char *argv[])
         exit(1);
     }        
     printf("%s \n", fname);
-    printf("ID of device: %d \n", finfo.st_dev);
-    printf("Inode number: %d \n", finfo.st_ino);
+    printf("ID of device: %ld \n", finfo.st_dev);
+    printf("Inode number: %ld \n", finfo.st_ino);
     printf("File mode   : %o \n", finfo.st_mode);
-    printf("Num of links: %d \n", finfo.st_nlink);
+    printf("Num of links: %ld \n", finfo.st_nlink);
     printf("User ID     : %d \n", finfo.st_uid);
     printf("Group ID    : %d \n", finfo.st_gid);
-    printf("Files size  : %d \n", finfo.st_size);
-    printf("Last access time : %u \n", finfo.st_atim);
-    printf("Last modify time : %u \n", finfo.st_mtim);
-    printf("Last stat change : %u \n", finfo.st_ctim);
-    printf("I/O Block size : %d \n", finfo.st_blksize);
-    printf("Num of blocks  : %d \n", finfo.st_blocks);
-    printf("File system : %s \n", finfo.st_fstype);
+    printf("Files size  : %ld \n", finfo.st_size);
+    //printf("Last access time : %u \n", finfo.st_atim);
+    //printf("Last modify time : %u \n", finfo.st_mtim);
+    //printf("Last stat change : %u \n", finfo.st_ctim);
+    printf("I/O Block size : %ld \n", finfo.st_blksize);
+    printf("Num of blocks  : %ld \n", finfo.st_blocks);
+    //printf("File system : %s \n", finfo.st_fstype);
 }

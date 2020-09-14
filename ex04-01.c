@@ -38,6 +38,6 @@ int main()
     stat(originalname, &finfo);
     printf("\n%s\n", originalname);
     printf("File mode   : %o\n", finfo.st_mode);
-    printf("Files size  : %d\n", finfo.st_size);
-    printf("Num of blocks  : %d\n", finfo.st_blocks);
+    printf("Files size  : %ld\n", finfo.st_size);
+    printf("Num of blocks  : %ld\n", finfo.st_blocks);
 }

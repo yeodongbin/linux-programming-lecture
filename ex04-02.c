@@ -1,4 +1,5 @@
-#include <unistd.h>
+#include <unistd.h>  //close
+#include <fcntl.h>   //open
 #include <sys/types.h>
 #include <sys/stat.h>
 

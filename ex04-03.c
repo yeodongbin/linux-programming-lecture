@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <fcntl.h>   //open
+#include <unistd.h>  //close
+
 int main()
 {
     int filedes;

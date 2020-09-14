@@ -16,12 +16,14 @@ int main()
         /* write가 비정상적으로 수행되었다. (실패) */
         if(write(fdout, buffer, nread) < nread)
         {
+            printf("write가 비정상적으로 수행되었다. (실패)\n");
             close(fdin);
             close(fdout);
         }
     }
 
     /* 프로그램이 정상적으로 수행되었다. */
+    printf("프로그램이 정상적으로 수행되었다.\n");
     close(fdin);
     close(fdout);
 }

@@ -24,4 +24,4 @@ int main()
     /* 프로그램이 정상적으로 수행되었다. */
     close(fdin);
     close(fdout);
-}s
+}

@@ -1,7 +1,8 @@
 #include <unistd.h>
 #include <sys/types.h>
+#include <stdio.h>
 
-main()
+int main()
 {
     pid_t pid;
     int i = 0;

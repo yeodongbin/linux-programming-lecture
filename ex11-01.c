@@ -1,10 +1,13 @@
 #include <unistd.h>
 #include <sys/types.h>
+#include <sys/stat.h>
 #include <fcntl.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 #define MSGSIZE 100
 
-main()
+int main()
 {
     pid_t   pid1, pid2;
     int     filedes, p1[2], p2[2];
@@ -37,7 +40,8 @@ main()
                 if(FD_ISSET(p2[0], &newset))
                         if(read(p2[0], msg, MSGSIZE) > 0)
                                 printf("[parent] %s\n", msg);
-newset = initset;
+    
+            newset = initset;
         }
     }
 else if(pid1 == 0 && pid2 == 0) {          /* 1st child */

@@ -1,10 +1,11 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <sys/types.h>
+#include <stdio.h>
 
 void cleanupaction(void);
 
-main()
+int main()
 {
         pid_t pid;
         int i;

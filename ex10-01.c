@@ -1,10 +1,12 @@
 #include <unistd.h>
 #include <signal.h>
+#include <stdio.h>  //printf
+#include <stdlib.h> //exit
 
 void handler(int signum);
 int flag = 5;
 
-main()
+int main()
 {
         struct sigaction act;
         sigset_t set;

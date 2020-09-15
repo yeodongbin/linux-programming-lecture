@@ -1,7 +1,10 @@
 #include <sys/types.h>
+#include <sys/wait.h>
 #include <unistd.h>
+#include <stdio.h>  //printf
+#include <stdlib.h> //exit
 
-main()
+int main()
 {
     pid_t pid;
     int status;

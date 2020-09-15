@@ -1,10 +1,14 @@
 #include <sys/types.h>
 #include <sys/socket.h>
-#include <netinet/in.h>
+#include <netinet/in.h>  
+#include <arpa/inet.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>  //close
  
 #define SIZE    sizeof(struct sockaddr_in)
  
-main()
+int main()
 {
     int sockfd_listen;
     int sockfd_connect;

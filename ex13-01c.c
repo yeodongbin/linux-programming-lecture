@@ -1,12 +1,15 @@
 #include <sys/types.h>
 #include <sys/socket.h>
-#include <netinet/in.h>
+#include <netinet/in.h>  
+#include <arpa/inet.h>
+#include <stdlib.h>
+#include <stdio.h>
 #include <netdb.h>
 #include <unistd.h>
 
 #define SIZE    sizeof(struct sockaddr_in)
 
-main()
+int main()
 {
     int sockfd;
     char msg, hostname[1024], *ipaddr;

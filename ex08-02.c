@@ -18,6 +18,7 @@ main()
     {
         sleep(1);
         printf("child: bye!\n");
+        
         exit(1234);
     }
     else

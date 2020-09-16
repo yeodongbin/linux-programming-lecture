@@ -3,7 +3,7 @@
 
 int sockfd_connect;
 
-main()
+int main()
 {
     /* sock_listen 소켓 생성 */
     /* sock_listen으로 bind 호출 */

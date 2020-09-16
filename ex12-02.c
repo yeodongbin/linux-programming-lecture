@@ -21,10 +21,14 @@ main()
 
     ipaddr2.s_addr = ipaddr1;
 
-    if((ipaddr1 = inet_addr(invalid)) == -1)
+    if((ipaddr1 = inet_addr(invalid)) == -1) 
+    {
         printf("invalid: %s\n", invalid);
-    else
+    } 
+    else 
+    {
         printf("vaild: %x\n", ipaddr1);
-
+    }
+    
     printf("%s\n", inet_ntoa(ipaddr2));
 }

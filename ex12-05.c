@@ -12,7 +12,8 @@ main()
 
     /* bind()를 호출하는 부분 */
 
-    if(listen(sockfd_listen, 5) == -1) {
+    if(listen(sockfd_listen, 5) == -1) 
+    {
         printf("fail to call listen()\n");
         exit(1);
     }
